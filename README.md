@@ -1,5 +1,3 @@
-# c-warehouse
-It all starts now.
 #include<stdio.h>
  main()
  {int w,s,l;
