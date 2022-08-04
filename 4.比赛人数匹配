@@ -1,0 +1,9 @@
+#include"stdio.h" 
+ main()
+ {char h,j,k='y';//h为a的对手，j为b的对手，
+                //k为c的对手（我们直接可得出k只能为y对手） 
+  for(h='y';h<='z';h++)//a的对手从y开始判断，由题意得 
+   for(j='x';j<='z';j++)//j就没有要求，从x开始 
+    if(h!=j&&h!=k&&j!=k)//必须都要不相同  
+	 printf("a---%c,b---%c,c---%c",h,j,k) ;//输出即可 
+}
