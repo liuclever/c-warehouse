@@ -1,0 +1,12 @@
+#include"stdio.h"
+ main()
+ { int m,i,a,k;
+    printf("请输入一个整数：");
+    scanf("%d",&m);
+     k=sqrt(m);
+    for(i=2;i<=m;i++)
+      if(m%i==0)  break;
+      if(i>k) printf("%d是素数",m);
+       else printf("%d不是素数",m);
+        
+ }
