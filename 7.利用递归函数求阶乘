@@ -1,0 +1,18 @@
+#include"stdio.h"
+ main()
+ {int i,n;
+ int jc(int);
+  printf("请输入你要求的阶乘数： \n");
+  scanf("%d",&n);
+  for(i=1;i<=n;i++)
+   printf("%d的!为%d\n",i,jc(i));
+    
+ }
+ 
+ int jc(int i)
+ {int sum=0;
+  if(i==0||i==0)
+   return 1;
+  sum=i*jc(i-1);
+   return sum;
+ }
