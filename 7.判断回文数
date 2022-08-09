@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+	int x, a, b, c, d, e;
+	printf("请输入一个五位数： \n");
+	scanf_s("%d", &x);
+	a = x / 10000;
+	b = x % 10000 / 1000;
+	c = x % 1000 / 100;
+	d = x % 100 / 10;
+	e = x % 10;
+	printf("%d\n", a);
+	printf("%d\n", b);
+	printf("%d\n", c);
+	printf("%d\n", d);
+	printf("%d\n", e);
+	if (a == e && b == d)
+		printf("这个数是回文数");
+	else
+		printf("这个数不是回文数");
+	return 0;
+}
