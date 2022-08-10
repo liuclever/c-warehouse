@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    char ch, ch1;
+    printf("请输入日期的首字母(小写)： ");
+    ch = getchar();
+    if (ch >= 'a' || ch <= 'z')
+        switch (ch)
+        {
+        case 'm': printf("星期一"); break;
+        case 't': printf("有相同的首字母，请继续输入第二个字母(小写） \n");
+            getchar();//特别重要处！！
+            if (ch1 = getchar() == 'u') printf("星期二");
+            else if (ch1 == 'h') printf("星期二"); else printf("输如错误"); break;
+        case 'w': printf("星期一"); break;
+        case 'f': printf("星期一"); break;
+        case 's': {printf("有相同的首字母，请继续输入第二个字母(小写） \n");
+            getchar();//特别重要处！！
+            if (ch1 = getchar() == 'a') printf("星期六");
+            else if (ch1 == 'u') printf("星期天"); else printf("输如错误"); break; }
+        }
+    else
+        printf("你的输入有误： ");
+
+}
