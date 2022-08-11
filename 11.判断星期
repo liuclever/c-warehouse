@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int my_strlen(char* str)
+{
+	if (*str != '\0')//如果没有到结束符，就判断
+		return 1 + my_strlen(str + 1);//依次加一，判断到了\0
+	                                 //就返回0，依次加+1
+	else return 0;
+}
+main()
+{
+	char arr[] = "abcc";
+	int sum = my_strlen(arr);
+	printf("the len is %d", sum);
+	return 0;
+}
