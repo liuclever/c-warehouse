@@ -1,0 +1,31 @@
+#include<stdio.h>
+int    sushu(int n)
+{
+	int i;
+	for (i = 2; i <= n / 2; i++)
+		if (n % i == 0)//如果能够被整除，就不是素数，
+			          //返回0
+			return 0;
+		else
+			if (n /2  == i)//不能被整除，并且当判断到最后一个时
+				           //i一定是等于n/2的，返回1
+				return 1;
+}
+
+int  main()
+{
+	int n,t=0;
+	int sushu (n);
+	printf("100以内的素数为：  ");
+	for (n=2;n<=100;n++)
+	{
+		
+		if (sushu(n) == 1)
+		{
+			printf("%d ", n);
+			t++;
+		}
+	}
+	printf("   \n个数为%d",t);
+	return 0;
+}
