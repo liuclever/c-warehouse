@@ -1,0 +1,11 @@
+main()
+{
+	float s=0;
+	int t=1;
+	for (int i = 1; 1.0 / i > 10e-6; i=i+2)
+	{
+		s+= 1.0 / (i * t);
+		 t = -t;
+	}
+	printf("圆周率为：%f", s * 4);
+}
