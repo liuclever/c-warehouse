@@ -1,0 +1,22 @@
+main()
+{
+	char s[20];
+	int word = 1, i,sum=0;
+	printf("请输入文章（敲回车确定）");
+	gets(s);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == ' ')
+			word = 1;
+		else if (word == 1)
+		      {
+			 s[i]=s[i]-32;
+			word = 0;
+			sum++;
+		       }
+	}
+	printf("首字母大写:\n");
+	puts(s);
+	printf("共有%d个", sum);
+}
+main()
