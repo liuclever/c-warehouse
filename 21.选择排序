@@ -1,0 +1,24 @@
+#include<stdio.h>
+#define S  5
+main()
+{
+	int i, j,t;
+	int a[S];
+	printf("请输入5个数：\n");
+	for (i = 0; i<S; i++)
+		scanf_s("%d", &a[i]);
+	for (i = 0; i < S - 1; i++)
+		for (j = i + 1; j <= S - 1; j++)
+		{
+			if (a[i] > a[j])
+			{
+				t = a[j];
+				a[j] = a[i];
+				a[i] = t;
+
+			}
+		}
+	for (i =0; i<S; i++)
+		printf("%d  ", a[i]);
+
+}
